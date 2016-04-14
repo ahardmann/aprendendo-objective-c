@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PjR-Ef-654">
+                                <rect key="frame" x="20" y="20" width="560" height="143"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rv0-GL-Drc">
+                                <rect key="frame" x="20" y="197" width="560" height="30"/>
+                                <state key="normal" title="Set Colour"/>
+                                <connections>
+                                    <action selector="setColour:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P4K-XT-D2S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Eu-Xz-RIp">
+                                <rect key="frame" x="20" y="240" width="560" height="30"/>
+                                <state key="normal" title="Set Size Font"/>
+                                <connections>
+                                    <action selector="setSizeFont:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7xX-xi-Ij7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4G-xo-h5o">
+                                <rect key="frame" x="20" y="284" width="560" height="30"/>
+                                <state key="normal" title="Set Shadow"/>
+                                <connections>
+                                    <action selector="setShadow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0ln-oh-T1F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OaE-Mp-G7o">
+                                <rect key="frame" x="20" y="368" width="560" height="30"/>
+                                <state key="normal" title="Align Right"/>
+                                <connections>
+                                    <action selector="alignRight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g7d-my-skx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cU-Zb-FdP">
+                                <rect key="frame" x="20" y="421" width="560" height="30"/>
+                                <state key="normal" title="Align Center"/>
+                                <connections>
+                                    <action selector="alignCenter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UL3-Md-rp1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGf-cc-2NZ">
+                                <rect key="frame" x="20" y="322" width="560" height="30"/>
+                                <state key="normal" title="Align Left"/>
+                                <connections>
+                                    <action selector="alignLeft:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1a1-lf-FIb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="T4G-xo-h5o" firstAttribute="top" secondItem="5Eu-Xz-RIp" secondAttribute="bottom" constant="14" id="21V-Pw-NYJ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="5cU-Zb-FdP" secondAttribute="leading" id="7t7-yc-Kh9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KGf-cc-2NZ" secondAttribute="trailing" id="Bd0-2H-PRU"/>
+                            <constraint firstItem="5cU-Zb-FdP" firstAttribute="top" secondItem="OaE-Mp-G7o" secondAttribute="bottom" constant="23" id="Bmz-8F-aQs"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="OaE-Mp-G7o" secondAttribute="leading" id="EGL-h5-aqz"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="rv0-GL-Drc" secondAttribute="leading" id="Gah-Fz-mdc"/>
+                            <constraint firstItem="KGf-cc-2NZ" firstAttribute="top" secondItem="T4G-xo-h5o" secondAttribute="bottom" constant="8" id="Gmg-HL-Ce2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rv0-GL-Drc" secondAttribute="trailing" id="MhR-Ew-EWQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PjR-Ef-654" secondAttribute="trailing" id="Puh-qd-B9x"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5Eu-Xz-RIp" secondAttribute="trailing" id="RTT-eL-2LY"/>
+                            <constraint firstItem="OaE-Mp-G7o" firstAttribute="top" secondItem="KGf-cc-2NZ" secondAttribute="bottom" constant="16" id="TdV-PA-0gV"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="KGf-cc-2NZ" secondAttribute="leading" id="TyD-c2-Rm2"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="T4G-xo-h5o" secondAttribute="leading" id="XA9-TH-JWc"/>
+                            <constraint firstItem="5Eu-Xz-RIp" firstAttribute="top" secondItem="rv0-GL-Drc" secondAttribute="bottom" constant="13" id="aGT-ZI-gKg"/>
+                            <constraint firstItem="rv0-GL-Drc" firstAttribute="top" secondItem="PjR-Ef-654" secondAttribute="bottom" constant="34" id="g3b-Fk-rwn"/>
+                            <constraint firstItem="PjR-Ef-654" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="gzZ-q3-Oag"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5cU-Zb-FdP" secondAttribute="trailing" id="kYR-Z3-l0c"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="5Eu-Xz-RIp" secondAttribute="leading" id="pWN-jD-Xk9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OaE-Mp-G7o" secondAttribute="trailing" id="tmo-fq-Hdw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="T4G-xo-h5o" secondAttribute="trailing" id="wsX-wg-B8l"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="PjR-Ef-654" secondAttribute="leading" id="yjF-tU-GaX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Label" destination="PjR-Ef-654" id="1JY-jz-G7Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="462" y="334"/>
+        </scene>
+    </scenes>
+</document>
