@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZg-JS-XRi">
+                                <rect key="frame" x="20" y="28" width="264" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5r-xv-bw0">
+                                <rect key="frame" x="316" y="28" width="264" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write.." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HQw-Hh-34r">
+                                <rect key="frame" x="20" y="88" width="264" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="294" id="MOD-0V-Tnv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="MOD-0V-Tnv"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="dissmissKeyboard:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="KXA-hG-r7b"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4j-Vk-M2K">
+                                <rect key="frame" x="316" y="88" width="264" height="30"/>
+                                <state key="normal" title="Ok"/>
+                                <connections>
+                                    <action selector="okButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RsM-NK-JQC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="w5r-xv-bw0" firstAttribute="leading" secondItem="rZg-JS-XRi" secondAttribute="trailing" constant="32" id="2Ir-if-bmX"/>
+                            <constraint firstItem="f4j-Vk-M2K" firstAttribute="leading" secondItem="HQw-Hh-34r" secondAttribute="trailing" constant="20" id="8TW-nr-DSP"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="HQw-Hh-34r" secondAttribute="leading" id="A9r-Kd-z53"/>
+                            <constraint firstItem="f4j-Vk-M2K" firstAttribute="top" secondItem="w5r-xv-bw0" secondAttribute="bottom" constant="39" id="EZN-vs-4HW"/>
+                            <constraint firstItem="HQw-Hh-34r" firstAttribute="top" secondItem="rZg-JS-XRi" secondAttribute="bottom" constant="39" id="FZF-a0-ZNw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="f4j-Vk-M2K" secondAttribute="trailing" id="IfS-ke-LYF"/>
+                            <constraint firstItem="f4j-Vk-M2K" firstAttribute="top" secondItem="w5r-xv-bw0" secondAttribute="bottom" constant="39" id="Io0-Fh-Wj3"/>
+                            <constraint firstItem="w5r-xv-bw0" firstAttribute="width" secondItem="rZg-JS-XRi" secondAttribute="width" id="Jaw-5o-9B8"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="HQw-Hh-34r" secondAttribute="leading" id="PZd-xx-ZNe"/>
+                            <constraint firstItem="w5r-xv-bw0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="R5c-wL-ACi"/>
+                            <constraint firstItem="rZg-JS-XRi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="TGk-sn-QUW"/>
+                            <constraint firstItem="f4j-Vk-M2K" firstAttribute="leading" secondItem="HQw-Hh-34r" secondAttribute="trailing" constant="32" id="akH-1p-XvO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="f4j-Vk-M2K" secondAttribute="trailing" constant="160" id="cgE-hE-fYR"/>
+                            <constraint firstItem="f4j-Vk-M2K" firstAttribute="width" secondItem="HQw-Hh-34r" secondAttribute="width" id="eVQ-Sl-k4d"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="rZg-JS-XRi" secondAttribute="leading" id="f2j-AI-fWX"/>
+                            <constraint firstItem="HQw-Hh-34r" firstAttribute="width" secondItem="f4j-Vk-M2K" secondAttribute="width" id="hwe-Co-wUv"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="HQw-Hh-34r" secondAttribute="leading" id="lql-Ph-TJR"/>
+                            <constraint firstItem="HQw-Hh-34r" firstAttribute="top" secondItem="rZg-JS-XRi" secondAttribute="bottom" constant="39" id="ls9-iv-PZ4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="w5r-xv-bw0" secondAttribute="trailing" id="nzz-i7-W9t"/>
+                            <constraint firstItem="f4j-Vk-M2K" firstAttribute="leading" secondItem="HQw-Hh-34r" secondAttribute="trailing" constant="32" id="yfm-31-hlL"/>
+                            <constraint firstItem="HQw-Hh-34r" firstAttribute="top" secondItem="rZg-JS-XRi" secondAttribute="bottom" constant="39" id="ygx-sH-4m2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="f4j-Vk-M2K" secondAttribute="trailing" constant="160" id="zjW-J0-raJ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="FZF-a0-ZNw"/>
+                                <exclude reference="PZd-xx-ZNe"/>
+                                <exclude reference="hwe-Co-wUv"/>
+                                <exclude reference="lql-Ph-TJR"/>
+                                <exclude reference="ls9-iv-PZ4"/>
+                                <exclude reference="8TW-nr-DSP"/>
+                                <exclude reference="EZN-vs-4HW"/>
+                                <exclude reference="cgE-hE-fYR"/>
+                                <exclude reference="yfm-31-hlL"/>
+                                <exclude reference="zjW-J0-raJ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="label1" destination="rZg-JS-XRi" id="x0o-uJ-Cuh"/>
+                        <outlet property="label2" destination="w5r-xv-bw0" id="0Wd-lv-Lbf"/>
+                        <outlet property="textField" destination="HQw-Hh-34r" id="Jzq-zD-1gQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="312" y="371"/>
+        </scene>
+    </scenes>
+</document>
