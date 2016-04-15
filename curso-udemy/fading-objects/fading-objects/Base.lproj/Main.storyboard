@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HtI-B1-wfG">
+                                <rect key="frame" x="19" y="35" width="560" height="30"/>
+                                <state key="normal" title="Fade in"/>
+                                <connections>
+                                    <action selector="fadeIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QIy-kr-001"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06s-Cw-646">
+                                <rect key="frame" x="20" y="86" width="560" height="30"/>
+                                <state key="normal" title="Fade Out"/>
+                                <connections>
+                                    <action selector="fadeOut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fh6-LR-mZB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVn-42-egr">
+                                <rect key="frame" x="20" y="125" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fc5-ud-dHn">
+                                <rect key="frame" x="19" y="176" width="560" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="kVn-42-egr" secondAttribute="trailing" id="2m1-dB-xcw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kVn-42-egr" secondAttribute="trailing" id="5H3-hO-uqZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kVn-42-egr" secondAttribute="bottom" constant="454" id="6mH-9g-HK4"/>
+                            <constraint firstItem="06s-Cw-646" firstAttribute="top" secondItem="HtI-B1-wfG" secondAttribute="bottom" constant="21" id="7MT-FV-ajS"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="kVn-42-egr" secondAttribute="leading" id="9Q9-r5-V1g"/>
+                            <constraint firstItem="kVn-42-egr" firstAttribute="top" secondItem="06s-Cw-646" secondAttribute="bottom" constant="9" id="9Xm-GZ-fxv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kVn-42-egr" secondAttribute="trailing" id="EtI-2e-kvn"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="06s-Cw-646" secondAttribute="leading" id="O0Q-u8-T2i"/>
+                            <constraint firstItem="fc5-ud-dHn" firstAttribute="top" secondItem="kVn-42-egr" secondAttribute="bottom" constant="30" id="Xgh-1a-0CN"/>
+                            <constraint firstItem="kVn-42-egr" firstAttribute="top" secondItem="06s-Cw-646" secondAttribute="bottom" constant="9" id="Y6e-w5-hji"/>
+                            <constraint firstItem="HtI-B1-wfG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-1" id="ZdE-6G-70E"/>
+                            <constraint firstItem="HtI-B1-wfG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="eK8-a0-pVi"/>
+                            <constraint firstItem="fc5-ud-dHn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-1" id="fWi-90-ix0"/>
+                            <constraint firstItem="fc5-ud-dHn" firstAttribute="top" secondItem="kVn-42-egr" secondAttribute="bottom" constant="30" id="fX4-K1-mcO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fc5-ud-dHn" secondAttribute="trailing" constant="1" id="kmN-0F-Ud4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="06s-Cw-646" secondAttribute="trailing" id="mZp-lP-w1Y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HtI-B1-wfG" secondAttribute="trailing" constant="1" id="rLT-Ct-JcL"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="kVn-42-egr" secondAttribute="leading" id="s4u-1r-9Fg"/>
+                            <constraint firstItem="kVn-42-egr" firstAttribute="top" secondItem="06s-Cw-646" secondAttribute="bottom" constant="9" id="xP8-Qp-9Kh"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9Xm-GZ-fxv"/>
+                                <exclude reference="Y6e-w5-hji"/>
+                                <exclude reference="Xgh-1a-0CN"/>
+                                <exclude reference="6mH-9g-HK4"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="kVn-42-egr" id="K5C-3E-bD8"/>
+                        <outlet property="segmentControl" destination="fc5-ud-dHn" id="vow-4p-kTY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="524" y="365"/>
+        </scene>
+    </scenes>
+</document>
