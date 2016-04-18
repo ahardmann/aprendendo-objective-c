@@ -1,18 +1,18 @@
 //
-//  reaction_gameUITests.m
-//  reaction-gameUITests
+//  _3_tapping_gameUITests.m
+//  03-tapping-gameUITests
 //
-//  Created by Lucas Calazans on 15/04/16.
+//  Created by Lucas Calazans on 18/04/16.
 //  Copyright © 2016 Arthur Hardmann. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface reaction_gameUITests : XCTestCase
+@interface _3_tapping_gameUITests : XCTestCase
 
 @end
 
-@implementation reaction_gameUITests
+@implementation _3_tapping_gameUITests
 
 - (void)setUp {
     [super setUp];

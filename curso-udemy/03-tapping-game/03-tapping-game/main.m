@@ -1,8 +1,8 @@
 //
 //  main.m
-//  reaction-game
+//  03-tapping-game
 //
-//  Created by Lucas Calazans on 15/04/16.
+//  Created by Lucas Calazans on 18/04/16.
 //  Copyright © 2016 Arthur Hardmann. All rights reserved.
 //
 

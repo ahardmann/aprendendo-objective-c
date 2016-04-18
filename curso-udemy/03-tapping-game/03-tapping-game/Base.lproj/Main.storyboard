@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUX-0X-NVq">
+                                <rect key="frame" x="20" y="42" width="560" height="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ze7-7y-YPQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4YN-da-ihc">
+                                <rect key="frame" x="20" y="90" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cog-78-BKU">
+                                <rect key="frame" x="20" y="194" width="560" height="30"/>
+                                <state key="normal" title="Tap"/>
+                                <connections>
+                                    <action selector="tap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tT7-UM-28A"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6AJ-qc-6tE">
+                                <rect key="frame" x="20" y="135" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="4YN-da-ihc" secondAttribute="trailing" id="5I2-Wd-mix"/>
+                            <constraint firstItem="UUX-0X-NVq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="CEX-pe-61U"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UUX-0X-NVq" secondAttribute="trailing" id="EyW-XL-zvd"/>
+                            <constraint firstItem="6AJ-qc-6tE" firstAttribute="top" secondItem="4YN-da-ihc" secondAttribute="bottom" constant="24" id="LcK-7O-uTW"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="6AJ-qc-6tE" secondAttribute="leading" id="NIB-vA-ZkG"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="4YN-da-ihc" secondAttribute="leading" id="PCo-Ea-PPa"/>
+                            <constraint firstItem="cog-78-BKU" firstAttribute="top" secondItem="6AJ-qc-6tE" secondAttribute="bottom" constant="29" id="TdC-LG-yPJ"/>
+                            <constraint firstItem="4YN-da-ihc" firstAttribute="top" secondItem="UUX-0X-NVq" secondAttribute="bottom" constant="18" id="ZqV-fN-mE6"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="cog-78-BKU" secondAttribute="leading" id="eFh-qs-4k7"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="UUX-0X-NVq" secondAttribute="leading" id="jQW-gC-LxM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cog-78-BKU" secondAttribute="trailing" id="tXk-5A-HIX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6AJ-qc-6tE" secondAttribute="trailing" id="u1e-h1-v80"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tapButtonOutlet" destination="cog-78-BKU" id="bKh-gl-EeY"/>
+                        <outlet property="tapLabel" destination="6AJ-qc-6tE" id="7j1-im-bDc"/>
+                        <outlet property="tieLabel" destination="4YN-da-ihc" id="ast-ZU-xpV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="613" y="339"/>
+        </scene>
+    </scenes>
+</document>

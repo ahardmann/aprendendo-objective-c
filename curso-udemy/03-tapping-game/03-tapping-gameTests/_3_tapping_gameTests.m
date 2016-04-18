@@ -1,18 +1,18 @@
 //
-//  hello_world_udemy_01Tests.m
-//  hello_world_udemy-01Tests
+//  _3_tapping_gameTests.m
+//  03-tapping-gameTests
 //
-//  Created by Lucas Calazans on 14/04/16.
+//  Created by Lucas Calazans on 18/04/16.
 //  Copyright © 2016 Arthur Hardmann. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface hello_world_udemy_01Tests : XCTestCase
+@interface _3_tapping_gameTests : XCTestCase
 
 @end
 
-@implementation hello_world_udemy_01Tests
+@implementation _3_tapping_gameTests
 
 - (void)setUp {
     [super setUp];
