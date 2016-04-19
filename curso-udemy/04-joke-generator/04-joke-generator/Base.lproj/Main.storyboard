@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iej-4a-LAY">
+                                <rect key="frame" x="20" y="33" width="560" height="30"/>
+                                <state key="normal" title="Tell me a joke"/>
+                                <connections>
+                                    <action selector="jokeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bcW-i6-fC2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="4S9-C2-89U">
+                                <rect key="frame" x="20" y="89" width="560" height="126"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="Iej-4a-LAY" secondAttribute="leading" id="2ql-C0-mOT"/>
+                            <constraint firstItem="4S9-C2-89U" firstAttribute="top" secondItem="Iej-4a-LAY" secondAttribute="bottom" constant="26" id="Pbb-8h-dAp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4S9-C2-89U" secondAttribute="trailing" id="bmY-oA-o2C"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Iej-4a-LAY" secondAttribute="trailing" id="e3b-ZH-puq"/>
+                            <constraint firstItem="Iej-4a-LAY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="13" id="v9m-oc-deP"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="4S9-C2-89U" secondAttribute="leading" id="xtA-G2-cdJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="4S9-C2-89U" id="UOb-JN-kS1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="517" y="336"/>
+        </scene>
+    </scenes>
+</document>

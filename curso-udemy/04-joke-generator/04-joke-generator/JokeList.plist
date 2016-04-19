@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Jokes</key>
+	<array>
+		<string>Por que a mulher nao pode ser eletricista?
+
+porque ela leva 9 meses para dar a luz</string>
+		<string>P: o que um livro de matematica fala para o livro de historia?
+
+R: nao me venha com historia que eu ja estou cheio de problema</string>
+		<string>P: porque o anao nao pode lutar boxe?
+
+R: porque ele da golpe baixo</string>
+		<string>P: qual o cachorro que é professor?
+
+R: é o caolecionador</string>
+	</array>
+</dict>
+</plist>
