@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50 fahrenheit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="raS-FK-Wfj">
+                                <rect key="frame" x="20" y="47" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50 celsius" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ej-Dx-kHR">
+                                <rect key="frame" x="20" y="178" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="0.0" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="b2g-l6-0fh">
+                                <rect key="frame" x="18" y="107" width="564" height="31"/>
+                                <color key="minimumTrackTintColor" red="0.76078431369999999" green="0.33725490200000002" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="maximumTrackTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="M38-Dg-08j"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="raS-FK-Wfj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="27" id="33X-Mu-aiG"/>
+                            <constraint firstItem="5ej-Dx-kHR" firstAttribute="top" secondItem="b2g-l6-0fh" secondAttribute="bottom" constant="41" id="AkT-mw-D95"/>
+                            <constraint firstItem="b2g-l6-0fh" firstAttribute="top" secondItem="raS-FK-Wfj" secondAttribute="bottom" constant="39" id="G11-Vi-brZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5ej-Dx-kHR" secondAttribute="trailing" id="JKC-mZ-i4s"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="b2g-l6-0fh" secondAttribute="trailing" id="PDX-wj-Bw0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="raS-FK-Wfj" secondAttribute="trailing" id="eMp-3m-jKW"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="5ej-Dx-kHR" secondAttribute="leading" id="eqo-RD-xkL"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="raS-FK-Wfj" secondAttribute="leading" id="hCN-Aj-ZtV"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="b2g-l6-0fh" secondAttribute="leading" id="iyU-OB-JsQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="celsius" destination="5ej-Dx-kHR" id="9Gy-dL-iyx"/>
+                        <outlet property="fahrenheit" destination="raS-FK-Wfj" id="sd6-pU-9WA"/>
+                        <outlet property="slider" destination="b2g-l6-0fh" id="NX6-wa-kaK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="267" y="354"/>
+        </scene>
+    </scenes>
+</document>
