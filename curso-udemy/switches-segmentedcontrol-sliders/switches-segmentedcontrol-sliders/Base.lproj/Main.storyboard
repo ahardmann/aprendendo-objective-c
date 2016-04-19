@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xEe-vK-BDb">
+                                <rect key="frame" x="276" y="36" width="51" height="31"/>
+                                <connections>
+                                    <action selector="theSwitchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="JFs-KT-8Gt"/>
+                                </connections>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aS4-2O-9HT">
+                                <rect key="frame" x="20" y="113" width="560" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYc-WJ-1PX">
+                                <rect key="frame" x="20" y="84" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="YDc-Lh-TLr">
+                                <rect key="frame" x="20" y="178" width="560" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title="Third"/>
+                                    <segment title="Four"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentButton:" destination="BYZ-38-t0r" eventType="valueChanged" id="kC1-cn-moO"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="miy-HE-eK1">
+                                <rect key="frame" x="20" y="220" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="17" minValue="17" maxValue="80" translatesAutoresizingMaskIntoConstraints="NO" id="CMr-Qw-tSU">
+                                <rect key="frame" x="23" y="275" width="559" height="31"/>
+                                <connections>
+                                    <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="9dX-Ei-VsX"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpv-Qe-MFm">
+                                <rect key="frame" x="20" y="319" width="560" height="69"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="miy-HE-eK1" firstAttribute="top" secondItem="YDc-Lh-TLr" secondAttribute="bottom" constant="14" id="4YX-ps-54Y"/>
+                            <constraint firstItem="CMr-Qw-tSU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="5VA-zG-bIi"/>
+                            <constraint firstItem="xEe-vK-BDb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="18" id="Atm-hW-FUc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aS4-2O-9HT" secondAttribute="trailing" id="Bt0-Sm-vfT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BYc-WJ-1PX" secondAttribute="trailing" id="IW6-me-PBd"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="aS4-2O-9HT" secondAttribute="leading" id="Kua-Rh-07f"/>
+                            <constraint firstItem="xEe-vK-BDb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NGk-PV-7Pb"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="jpv-Qe-MFm" secondAttribute="leading" id="NI3-KX-EUa"/>
+                            <constraint firstItem="xEe-vK-BDb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="256" id="NSY-W4-X44"/>
+                            <constraint firstItem="BYc-WJ-1PX" firstAttribute="top" secondItem="xEe-vK-BDb" secondAttribute="bottom" constant="17" id="P4o-mx-Trb"/>
+                            <constraint firstItem="xEe-vK-BDb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Q6a-0Z-eJj"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="YDc-Lh-TLr" secondAttribute="leading" id="R1L-AY-YwL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jpv-Qe-MFm" secondAttribute="trailing" id="SPW-3a-JBd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xEe-vK-BDb" secondAttribute="trailing" constant="255" id="UsQ-Ne-58K"/>
+                            <constraint firstItem="YDc-Lh-TLr" firstAttribute="top" secondItem="aS4-2O-9HT" secondAttribute="bottom" constant="35" id="W8d-qU-ye2"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="BYc-WJ-1PX" secondAttribute="leading" id="WNm-HK-G47"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="miy-HE-eK1" secondAttribute="trailing" id="bei-RP-8I0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CMr-Qw-tSU" secondAttribute="trailing" id="elR-Rn-vHQ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="miy-HE-eK1" secondAttribute="leading" id="iCH-Ej-KtI"/>
+                            <constraint firstItem="jpv-Qe-MFm" firstAttribute="top" secondItem="CMr-Qw-tSU" secondAttribute="bottom" constant="14" id="iqV-6x-bX5"/>
+                            <constraint firstItem="aS4-2O-9HT" firstAttribute="top" secondItem="BYc-WJ-1PX" secondAttribute="bottom" constant="8" id="jep-dY-XRc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xEe-vK-BDb" secondAttribute="trailing" constant="255" id="lUQ-4J-9B8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YDc-Lh-TLr" secondAttribute="trailing" id="lma-0J-Kdx"/>
+                            <constraint firstItem="xEe-vK-BDb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="256" id="m2I-Gd-pCq"/>
+                            <constraint firstItem="CMr-Qw-tSU" firstAttribute="top" secondItem="miy-HE-eK1" secondAttribute="bottom" constant="34" id="tFN-Tq-Zay"/>
+                            <constraint firstItem="xEe-vK-BDb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="zCm-5R-Xur"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Atm-hW-FUc"/>
+                                <exclude reference="NSY-W4-X44"/>
+                                <exclude reference="Q6a-0Z-eJj"/>
+                                <exclude reference="UsQ-Ne-58K"/>
+                                <exclude reference="lUQ-4J-9B8"/>
+                                <exclude reference="m2I-Gd-pCq"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="button1" destination="aS4-2O-9HT" id="1wv-e2-YaC"/>
+                        <outlet property="labelSegment" destination="miy-HE-eK1" id="CXp-M1-gP2"/>
+                        <outlet property="labelSlider" destination="jpv-Qe-MFm" id="fxc-cd-a4i"/>
+                        <outlet property="labelSwitch" destination="BYc-WJ-1PX" id="v1B-Ul-hn8"/>
+                        <outlet property="segmentControl" destination="YDc-Lh-TLr" id="BL8-oe-oTY"/>
+                        <outlet property="slider" destination="CMr-Qw-tSU" id="vmX-zZ-nVj"/>
+                        <outlet property="switchComp" destination="xEe-vK-BDb" id="DGY-vD-0hI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="515" y="109"/>
+        </scene>
+    </scenes>
+</document>
