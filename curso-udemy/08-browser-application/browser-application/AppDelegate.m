@@ -1,11 +1,3 @@
-//
-//  AppDelegate.m
-//  browser-application
-//
-//  Created by Lucas Calazans on 22/04/16.
-//  Copyright © 2016 Arthur Hardmann. All rights reserved.
-//
-
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
